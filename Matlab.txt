@@ -1,0 +1,827 @@
+                    This is a Matlab course :
+
+
+Matlab varies between "Small and Capital" characters.
+ 
+end every sentence with a ;                        means it will not show the ans, or show it.
+---------------------------------------------------------------------------
+symbole *                                          for multyplication.
+--------------------------------------------------------------------
+symbole ^                                          for power.
+-----------------------------------------------------------------------
+symbole /                                          for division.
+----------------------------------------------------------------------
+rem(variable,variable)                               show the remainder after division.
+------------------------------------------------------------------------
+pi                                                 for the const 3.14 .
+-------------------------------------------------------------------------
+log10()                                            to write log10() .
+-------------------------------------------------------------------------
+log()                                              to write ln() .
+--------------------------------------------------------------------------
+log"base num"()                                    to write log with a different base.
+-------------------------------------------------------------------------
+sqrt()                                             to write squer root.
+-------------------------------------------------------------------------
+cos()                                              to write cosine with Radian.
+----------------------------------------------------------------------------------
+sin()                                              to write sine with Radian.
+--------------------------------------------------------------------------------
+cosd()                                             to write it in a degree way.
+------------------------------------------------------------------------
+tan()                                              to write tan().
+---------------------------------------------------------------------------------------------------
+acos()                                             to write arccosine() or (cos())^(-1) or inverse .
+--------------------------------------------------------------------------
+abs()                                              to get abselute value.
+---------------------------------------------------------------------------
+sum()                                              to get summition.
+---------------------------------------------------------------------------
+inf                                                for infinity.
+--------------------------------------------------------------------
+exp()                                              to write e^(num) .
+--------------------------------------------------------------------------------------
+factorial()                                        to show factorial num. مضروب العدد
+--------------------------------------------------------------------------------------
+format long                                        to show long format of a num.
+--------------------------------------------------------------------------------------
+format short                                       to show short format of a num.
+   put e after a format short or long                 to show exp in the num.
+---------------------------------------------------------------------------------------
+who                                                to show used variables.
+------------------------------------------------------------------------------------------
+whos                                               to show all inf about your all variables.
+-------------------------------------------------------------------------------------------
+fix ( )                                            go towards zero.
+------------------------------------------------------------------------------------------
+floor ( )                                          go towards - infinity.
+------------------------------------------------------------------------------------------
+ceil ( )                                           go towards + infinity.
+-------------------------------------------------------------------------------------------
+round ( )                                          go towards the nearest integer.  
+------------------------------------------------------------------------------------------------------
+rem( , )                                           to show the reminder of division of first on second.
+-------------------------------------------------------------------------------------------------------------
+sing( )                                            to show sign, if num >0 show 1, num <0 show -1, num =0 show 0
+---------------------------------------------------------------------------------------------------------------
+numi                                               to write complex num.
+   num + or - numi                                    6 - 7i
+   or variable = complex (real, imagenry)             it will be written.
+---------------------------------------------------------------------------------------------------------   
+abs ()                                                to show the absolute of the variable.
+-------------------------------------------------------------------------------------------------------
+conj()                                                to show coplex conjugate.  "change imaginary part sign"
+--------------------------------------------------------------------------------------------------------
+angle ()                                              to show angle "R" of the of the variable.
+--------------------------------------------------------------------------------------------------------
+real ()                                               to show the real part of the variable.
+--------------------------------------------------------------------------------------------------------
+imag ()                                               to show the imagenry part of the variable.
+----------------------------------------------------------------------------------------------------------------------------------
+[num num num]                                      to write a vector or matrex. to separate between nums you can put comma"," or hit space & ";" to have a new row.
+----------------------------------------------------------------------------------------------------------------------------------
+num : num                                          to write a vector form first num to second one with one step.
+-------------------------------------------------------------------------------------------------------------------------------
+num : num : num                                    to write a vector begenning : steps : final .
+---------------------------------------------------------------------------------------------------------------------------------
+linspace(num, num, num)                            to write a nums of series (begenning, final, nums you wante). "100 num defult"
+---------------------------------------------------------------------------------------------------------------------------------
+logspace(num, num, num)                            to write a nums of series (begenning power, final power, nums you wanted) .
+   like you want to write 10 nums between 10^0 : 10^1  "" x = logspace(0, 1, 10).
+--------------------------------------------------------------------------------------
+vector's name(num)                                 to show the value of the num.
+-----------------------------------------------------------------------------------------------
+vector's name.^num                                 to power each num in the vector by num.
+----------------------------------------------------------------------------------------
+max()                                              to show max num in the vector.
+---------------------------------------------------------------------------------------
+min()                                              to show min num in the vector.
+--------------------------------------------------------------------------------------
+mean()                                             to calculate the average.
+------------------------------------------------------------------------------------
+sum()                                              to sum the nums in the vector.
+------------------------------------------------------------------------------------------------
+length()                                           to show num of the elements in the vector.
+----------------------------------------------------------------------------------------------------
+prod()                                             to calculate the product of vector's elements.
+--------------------------------------------------------------------------------------------
+dot( , )                                           dot product between two vectors(a,b).
+------------------------------------------------------------------------------------------
+cross( , )                                         cross product between two vectors(a,b).
+------------------------------------------------------------------------------------------------
+"num"e"-+num"                                      it's num*10^(-+num). " e  here is 10 to power "
+-------------------------------------------------------------------------------------------------------------------------------------------------
+vector's name(num: num: num)                       to show nums with steps from the vector. (first element position: steps: last element position)
+-----------------------------------------------------------------------------------------------------------------
+new variable=exest variable(num: num: num)         to make a vector form another one.(first :steps-or+ :last).
+--------------------------------------------------------------------------------------------
+meshgrid(variable)                                 to make a matrix from a vector.
+------------------------------------------------------------------------------------------------------------------
+rand(num, num)                                     to create a random vecrot or matrex (row, colomn). "less than 1"
+--------------------------------------------------------------------------------------------------------
+randperm()                                         to create a matrix or a vector but intger nums.
+-----------------------------------------------------------------------------------------------------
+sort()                                             to sort the nums ascending.
+   or sort(variable, "")                           to sort as you want.( , "ascend or descend").
+--------------------------------------------------------------------------------------------------------------------------------------
+[num num num; num num num]                         to write a matrix. ";" to make a new row.  "," or "space" to make a now colomn.
+--------------------------------------------------------------------------------------
+matrix + or - matrix                               to add or subtract two matrix.
+--------------------------------------------------------------------------------------------------------
+matrix * or / matrix                               to multiply or divid two matrix.
+--------------------------------------------------------------------------------------------------------
+matrix. * or / matrix                              to multiply or divid "element by element".
+-----------------------------------------------------------------------------------------------------------------------------------------
+ones(row, colomn) or (num)                         to write a matrix of only ones consist of (row, colomn) or (num) it will be squared.
+-----------------------------------------------------------------------------------------------------------------------------------------
+zeros(row, colomn) or (num)                        to write a matrix of only zeros consist of (row, colomn) or (num) it will be squared. 
+----------------------------------------------------------------------------------------------------------                                 
+eye(num)                                           to write a matrix of only diagonal=1 and all elements=0 .
+-----------------------------------------------------------------------------------------------------------------
+magic()                                            magic matrix that's "sum of diagonal elements= sum of first row = sum of first colomn." 
+---------------------------------------------------------------------------------------------------------------------------------------
+inv(matrix) or matrix^(-1)                         to get the inverse.
+----------------------------------------------------------------------------------------------------
+matrix name(row, colomn) or matrix name(num)       to get the value of that specefic position. 
+-----------------------------------------------------------------------------------------------------
+[mat(r,c) mat(r,c) ; mat(r,c) mat(r,c)]            to get the values of these specefic positions.  
+------------------------------------------------------------------------------------------------------
+matrix name(: , [ c c ])                           to show two colomns of a matrix.
+   matrix name([ r r ] , : )                          to show tow rows of a matrix.
+   matrix name([r r] , [c c])                         to show four specefic positions.
+----------------------------------------------------------------------------------------
+matrix name(r , c) = []                            to delete a row or colomn.
+-----------------------------------------------------------------------------------------------------------
+mat1 = [ mat0 num ]                                to make a new mat from old one by adding elements to it.
+   like :-
+         x = [ 1 3 4 5 ];
+         y = [ x 1 ]                               % add 1 to the end of (x). "add colomn"
+         y = [ x ; 2*x ; 3*x ]                     % make a mat of (3,4) from (x). "add rows"
+         z = [ 2 3 4 5 ];
+         y = [ x ; 2*x ; 3*x ; z ]                 % make a mat of (4,4) from (x) and (z). "add rows"
+---------------------------------------------------------------------------------------------------------
+matrix name(row, colomn)=new value                 to renew a value or change it.
+-------------------------------------------------------------------------------------------------------------------
+matrix name(row, : )=[num num num]                 to renew a row or change it. "all the row" && ":" mean all
+-----------------------------------------------------------------------------------------------------------------------------------
+matrix name( : , colomn)=[num; num; num]           to renew a colomn or change it, with a ";" or not. "all the colomn" && ":" mean all
+--------------------------------------------------------------------------------------------------------
+matrix name' or trnaspose()                        to transpose it. ['] مدور 
+-----------------------------------------------------------------------------------------------------------------------------------
+rand(row, colomn) or (num)                         to write a random matrix consist of (row, colomn) or (num) it will be squared. 
+--------------------------------------------------------------------------------------------------------
+det()                                              to get a matrix determinant. محدد
+-------------------------------------------------------------------------------------------------
+sum(matrix)                                        to get the sum of nums to each colomn.
+   sum(sum(matrix))                                   to get the sum of all nums in the matrix.
+--------------------------------------------------------------------------------------------------------------------------------------
+repmat(num you want, row, colomn)                  to write a matrix from one value "num you want" and repeat it. مصفوفه كل عناصرها قيمه واحده
+   or repmat(num you want, num)                       to write a squar matrix.
+----------------------------------------------------------------------------------------------------------------------------------------
+reshape(mat name, row, colomn)                     to reshape the matrix to now shape, but rows and colomns should = num of elements.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+triu()                                             to make a matrix from other matrix but only take upper tringle value and make the rest =0.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+tril()                                             to make a matrix from other matrix but only take lower tringle value and make the rest =0.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+[variable, variable]=size(mat name)                to know the size of a matrix.[variable, variable] first for rows and second for colomns.
+--------------------------------------------------------------------------------------------------------------------------
+length()                                           to show you the max num of the matrix, if it's the rows or colomns.
+------------------------------------------------------------------------------------------------------------------------
+size()                                             to show "dimentions" of a matrix. (m,n)
+--------------------------------------------------------------------------------------------------------
+numel()                                            to show you the num of elements of a matrix.
+------------------------------------------------------------------------------------------------------
+trace()                                            to show sum of diagonal elements.
+-------------------------------------------------------------------------------------
+diag()                                             to show diagonal elements.
+----------------------------------------------------------------------------------
+max()                                              begest nums in each colomn.
+   max(max(matrix))                                   begest num in the matrix.
+-----------------------------------------------------------------------------------------------------------------------------
+flipud()                                           to make the last raw in beggining and like that with the rest. "it flips the matrix raws up to down"
+------------------------------------------------------------------------------------------------------------------------------ ------------------------------
+fliplr()                                           to make the last colomn in the beggining and like that with the rest. "it flips the matrix colomn left to right"
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+rot90()                                            to rotate the matrix 90 degree. "make each raw a flipped 90* colomn" 
+-------------------------------------------------------------------------------------------------------------------
+sort()                                             to make each colomn start with the smallest num in the it.
+----------------------------------------------------------------------------------------------------------------
+det()                                              calculate the determenant.
+------------------------------------------------------------------------------
+find()                                             to search in the matrix.
+----------------------------------------------------------------------------
+sqrtm()                                            square root for matrix.
+-----------------------------------------------------------------------------------
+crtl + n                                           to open a new script
+   edit                                               type edit in the command window.
+-------------------------------------------------------------------------------------
+% comment                                          to write a comment.
+----------------------------------------------------------------------------
+open('file's name')                                to open a file.
+--------------------------------------------------------------------------
+&                                                  and( ).
+|                                                  or( ). 
+&&                                                 and condition.
+||                                                 or condition.
+~                                                  not( ).
+xor                                                xor( ).   
+------------------------------------------------------------------------
+>                                                  greater than.
+<                                                  smaller than.
+>=                                                 greater than or equal.
+<=                                                 smaller than or equal.
+==                                                 equal. 
+~=                                                 not equal.                                                
+--------------------------------------------------------------------------------------
+if(condition 'true')                               to perform an if condition.
+   task you want.
+end   
+---------------------------------------------------------------------------------------
+disp('type what you want')                         to display what you want.
+   disp(variable)                                     to display it's value.
+---------------------------------------------------------------------------------------------
+if(condition 'true')                               to perform an ifnelse end condition. 
+   task you want.
+else
+   task you want.
+end
+------------------------------------------------------------------------------------------- 
+if(condition 'true')                               to perform an if elseif else end.
+   task you want.
+elseif(condition 1 'true')
+   task you want.
+.  
+.  
+.   
+elseif(condition n 'true')
+   task you want.
+else 
+   task you want.
+end
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+switch(expression num )                            to perform a switch case condition, it's take an argument and choose from cases which's suitabke if not it choose otherwise.                             
+   case(expression 1)
+       task you want.
+   case(expression 2)
+       task you want.
+   .
+   .
+   .
+   case(expression n)
+       task you want.
+   otherwise 
+       task you want.
+end
+-----------------------------------------------------------------------------------------------------    
+for (variable = num : num : num)                   to perform a for end loop. (start : step : last)
+   perform a task.
+end
+-------------------------------------------------------------------------------------------------------
+for (variavle = num : num : num)                   to perform a nested loops. (start : step : last)
+   perform a task.                                   " it takes first argument and perform it one time and takes 
+   for (variable = num2 : num2 : num2)                 the indsde argument and perform it till it end than repeat agian"
+       perform a task.
+   end 
+end
+----------------------------------------------------------------------------------------------------------------
+while (condition "true")                           to perform while end loop.
+   perform task.
+end
+-------------------------------------------------------------------------------------------------------   
+try                                                try catch end function. 
+   variable1 = variable2 * variable3; 
+catch
+   variable1 = not a number;
+   perform a task.
+end
+-----------------------------------------------------------------------------------
+function in Matlab :-
+
+   function [ area volume ] = circle(r)
+
+   area = pi*(r^2) ;
+   volume = (4/3)*pi*(r^3) ;
+
+   end
+
+   >> circle(num)                                  % recall the functoin, result = only area.
+   >>[ area volume ] = circle(num)                 % recall the function, result = area and volume.                                                                          
+
+ anonymous way to make a function :-
+   
+   f = @(x)  x^2 - 1;                              % type @(your var, other var) then here your equation.
+   f(9)                                            % recall the equation f(first var, second var).
+     ans =
+         80
+         ----------------------------------------------------             
+ other way to type a function :-
+          
+   f = inline('x^2 - 1' , 'x');                      % inline('your equation' , ' your var'). "only one var"
+   f(9)   
+     ans = 
+         80
+--------------------------------------------------------------------------------------------------------------------
+plot(first var, second var, 'arguments')           for plotting. (variable, variable, 'color shape view', 'linewidth',num of linewidth)
+  
+             some arguments:
+            ~color              ~marker                 ~line view
+
+           b     blue          .     point              -     solid
+           g     green         o     circle             :     dotted
+           r     red           x     x-mark             -.    dashdot 
+           c     cyan          +     plus               --    dashed   
+           m     magenta       *     star             (none)  no line
+           y     yellow        s     square
+           k     black         d     diamond
+           w     white         v     triangle (down)
+                               ^     triangle (up)
+                               <     triangle (left)
+                               >     triangle (right)
+                               p     pentagram
+                               h     hexagram   
+
+arguments like " linewidth, markeredgecolor, markerfacecolor, markersize ".                                                
+   like:
+     plot(x,y,'ro--','linewidth',3 ,'markerfacecolor','red', 'markeredgecolor','b' , 'markersize',1 )
+----------------------------------------------------------------------------------------------------------
+hold on                                            to plot more than one in one figure.
+   like:
+     plot(x, y)
+      hold on 
+     plot(x, z)
+
+or you can make like that:
+   plot(first var, second var, 'arguments "color, marker, lineview only"',third var, fourth var, 'all argument')                     
+----------------------------------------------------------------------------------------
+figure                                             to open a new figure to plot in it.
+   clf                                                to clear a figure.
+-----------------------------------------------------------------------------------------------------------------------
+ginput                                             make you gaining data from a figure by clicking on the point you want.
+-----------------------------------------------------------------------------------------------------------------------
+grid on                                            to grid the figure.
+box on                                             to put the figuer on box.
+gtext('your text')                                 Add text to figure using mouse.
+title('your title')                                to put a title.
+xlabel('your label')                               to put a label to the x-axis.
+ylabel('your label')                               to put a label to the y-axis.
+zlabel('your label')                               to put a label to the z-axis.
+legend('first picture','second one')               key of any chart, in the top or bottom of each figure."def of each line"
+ 
+for all arguments you can type :
+  xlabel({'name of the line'},...
+          'fontsize', num,....
+          'fontname','name of the font')   
+  only legend you can type   'orientation','horizontal or 'vertical'
+                              'location', 'northeast' or any location                                            
+  
+or you can do that from the figure it self:
+   from View then Property editor you can do any thing.
+--------------------------------------------------------------------------------------------------------------------------------
+some of the symbols of math:
+   \alpha  α            \beta  β         \gamma  γ        \omega    ω
+   \epsilon  ϵ          \Delta  Δ        \infty  ∞        \Theta   Θ
+   \theta  θ            \Pi     Π        \Sigma  Σ        \sigma    σ                                                  
+   \mu    µ             \lambda  λ       \rho    ρ        \partial   ∂	
+   \copyright  ©        \tau    τ        \int    ∫        \pm        ±
+---------------------------------------------------------------------------------
+subplot(num, num, num)                             to subplot (row, colomn, num of figure).
+   plot(varialbe, variable, 'arguments') 
+----------------------------------------------------------------------------------------------
+fplot(@function, [xmin xmax] , 'property')        to plot quickly.
+   Ex:-
+   fplot(@sin , [0 2*pi] , 'r-o')
+--------------------------------------------------------------------------------
+plotyy Ex :-                                       plot in a 10 to power num.
+
+   x = 0:0.01:20;
+   y1 = 200*exp(-0.05*x).*sin(x);
+   y2 = 0.8*exp(-0.5*x).*sin(10*x);
+   [ax , h1, h2 ]= plotyy(x, y1, x, y2, 'plot');
+   set( get( ax(1), 'ylabel' ), 'string' , 'y1')
+   set( get( ax(2), 'ylabel' ), 'string' , 'y2')
+   xlabel('0 to 20 sec')
+   set(h1, 'linewidth',2,'linestyle','--')
+   set(h2, 'linewidth',2,'linestyle','-.')
+----------------------------------------------------------------------------------------------
+loglog Ex :-                                       plot in a 10 to power num fpr the 2 axis.
+
+   x = logspace(-1, 2);
+   y = exp(x);
+   loglog(x,y,'r-s')
+   grid on 
+--------------------------------------------------------------------------------------------------
+semilogy and semilogx Ex :-                        plot in a  10 to power num in y axis or x axis.
+
+   x = 0:1:10;
+   y = 10.^x;
+   semilogy(x,y)                                   % 10 to power in y axis. 
+   semilogx(x,y)                                   % 10 to power in x axis.
+   grid on
+------------------------------------------------------------------------------------------
+plotyy Ex:-                                        to plot with 2 y axis
+
+   x = 0:0.01:20;
+   y1 = 200*exp(-0.05*x).*sin(x);                  % first y in the left.
+   y2 = 0.8*exp(-0.5*x).*sin(10*x);                % second y in the right.
+   plotyy(x,y1,x,y2)
+--------------------------------------------------------------------------------------------
+3D plotting Ex :-                                  plot in 3D. (var, var, var, 'arguments')         
+
+   x = linspace(0,2*pi,100);
+   y = sin(x);
+   z= x;
+   plot3(x,y,z,'linewidth',2);
+-------------------------------------------------------------------------------------------------
+stem graph Ex:-                                    plot in a line with a circle head.
+
+   X = linspace(0,2*pi,50)';
+   Y = cos(X);
+   stem(X,Y , 'arguments') 
+               filled                              % filled circles.
+               diamond                             % diamond head.
+               and line argruments 
+   stem3(x, y, z, 'arguments')                     to plot in 3d.                            
+-------------------------------------------------------------------
+bar graph Ex :-                                    plot in a bars.
+
+   y = [5 2 1; 8 7 3; 9 8 6;5 5 5; 4 3 2];
+   bar(y)
+   bar3(y)                                            to bar in 3D.
+   barh(y)                                            Horizontal bar graph.
+--------------------------------------------------------------------------------------------
+area graph Ex :-                                   plot in an area.
+
+   y = [5 2 1; 8 7 3 ; 9 8 6 ;5 5 5; 4 3 2];
+   area(y)
+----------------------------------------------------------------------------------------
+stairstep graph Ex :-                              plot in a stairs shape.
+    
+   x = linspace(0, 2*pi, 20);
+   stairs(x, cos(x))
+-----------------------------------------------------------------------------------
+pie()                                              plot in a pie shape.
+ pie3()                                             plot in 3d pie shape.
+        doc pie and pie3
+------------------------------------------------------------------------------------
+polar plot Ex:-                                    Plot line in polar coordinates.
+
+   theta = 0:0.01:2*pi;
+   rho = sin(2*theta).*cos(2*theta);
+   polarplot(theta,rho)
+---------------------------------------------------------------------------------------
+fill plot Ex:-                                     Filled polygons.
+
+   x = [0 1 1 2; 1 1 2 2; 0 0 1 1];
+   y = [1 1 1 1; 1 0 1 0; 0 0 0 0];
+   z = [1 1 1 1; 1 0 1 0; 0 0 0 0];
+   fill(x,y,'r')                                      % 2D
+   fill3(x, y, z, z)                                  % 3D
+----------------------------------------------------------------------------------
+surface plot Ex:-
+
+   [X,Y,Z] = peaks(25);
+   CO(:,:,1) = zeros(25); % red
+   CO(:,:,2) = ones(25).*linspace(0.5,0.6,25); % green
+   CO(:,:,3) = ones(25).*linspace(0,1,25); % blue
+   surf(X,Y,Z,CO)                                  % surface plot
+-----------------------------------------------------------------------------------
+mesh surface plot
+   
+   x = -3: 0.01: 3;
+   y = -3: 0.01: 3;
+   [x,y] = meshgrid(x,y);                          % convert a vector a matrix.
+   z = x.^2 + y.^2 ;                               % required equation to be plotted.
+   mesh (x,y,z)
+-----------------------------------------------------------------------------------------
+control plot Ex :-                                 
+
+   num = [1 ];           بسط
+   den = [1 2 1 ];       مقام
+   impulse(num , den)                                 show you impulse response.
+   step(num , den)                                    show you step response.
+       ----------------------------------------------------
+   num_z = [ 0.1873*1.4 0.17523*1.4];                 z domain in a transfer function. 
+   den_z = [ 1 -1.80559 0.83096 ];
+ 
+   tf_z = tf(num_z , den_z , 0.1);
+
+   num_c =[ 40*1.4 ];                                 continous domain in a transfer function.                             
+   den_c =[ 1 2 2.8 ];  
+   
+   tf_c = tf(num_c , den_c );
+
+   step(tf_z, 'r');
+   hold on 
+   step(tf_c, 'b');
+
+   legend('z t=0.1 red','c blue')
+---------------------------------------------------------------------------------------------------------
+make an equation from inpur and output vectors Ex :-
+ 
+ we use polyfit(input, output, order of equation)
+ 
+   x = [ 0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1];         %input vector
+   y = [ -0.4 1.9 3.2 6.1 7 7.34 7.6 9.59 9.48. 10 11];    %output vector
+   p = polyfit(x , y , 2 )
+-------------------------------------------------------------------------------------------------
+polynomials Roots and Poly Ex :-
+  
+   p = [ 1 -12 0 25 116 ];                             % eq = s^4 -12s^3 +0s^2 +25s +116 
+   k= roots(p)                                         to git the roots of the equation.
+
+   poly(k)                                             to git the equation from it's roots.
+---------------------------------------------------------------------------------------------------
+polynomials evaluation Ex :-
+  
+   p = [ 1 4 -7 -10 ];                                % p = x^3 +4x^2 -7x -10 
+   x = linspace (-1 , 3 , 100);
+   y = polyval(p, x)
+   plot(x,y)
+--------------------------------------------------------------------------------------
+polynomials Addition, Subtraction, Maltiplication and Division Ex :-
+
+   f1 = [ 1 2 3 4 ]                                    % f1 = x^3 +2x^2 +3x +4
+   f2 = [ 1 4 9 16 ]                                   % f2 = x^3 +4x^2 +9x +16
+
+   a = f1 + f2                                             % Addition  
+   b = f2 - f1                                             % Subtraction
+   c = conv(f1, f2)                                        % Maltiplication
+   d = deconv(c, f1)                                       % Division  
+      [m,n] = deconv(c, f1)                                   so the m is the division and the n is the reminder  
+------------------------------------------------------------------------------------------------------------------
+polynomials Differentiation and Integration Ex :-
+
+   p = [ 1 6 20 48 69 72 44 ];                         % p = s^6 + 6s^5 + 20s^4 + 48s^3 + 69s^2 + 72s + 44 
+   
+   der_v = polyder(p)                                  % derivation
+
+   int_v = polyint(der_v , constatnt num "44")         % integration  
+-----------------------------------------------------------------------------------------------------------------
+polnymials transfer function :-                    to type a transfer function.
+
+   num = [ 2 4 1 ];
+   den = [ 3 8 9 10 0 ];
+  
+   printsys(num , den)
+--------------------------------------------------------------------------------------------------
+partial fraction  :-                              to get the fractures
+
+   num = [ 1 8 16 9 6 ];                           
+   den = [ 1 6 11 6 ];
+   [x ,y ,z ] = residue(num, den)                     x = num of each fracture 
+                                                      y = - den of each fracture "zeros for den"
+                                                      z = int values
+ OR you can type it like that :-
+   syms "your symbols"
+   f = your function 
+   diff(int(f))                                    % ans will be the fracture.
+---------------------------------------------------------------------------------------------------
+write a fracture :-
+
+   k = 20;                                            % constant values.
+   z = [-2;-4];                                       % zeros of num.
+   p = [ -3 ; -2+5i ; -2-5i ];                        % zeros of den.
+  
+   sys = zpk(z, p, k)
+
+   sys =
+ 
+            20 (s+2) (s+4)
+         ---------------------
+         (s+3) (s^2 + 4s + 29)
+-------------------------------------------------------------------------------------------------
+differential equations :-
+
+   dsolve('D2y + 6*Dy + 8*y = 10')                 % to solve it. "D2y means y" the second differentiation"
+     ans = 
+         C2*exp(-2*t) + C1*exp(-4*t) + 5/4
+    
+   dsolve('D2y + 6*Dy + 8*y = 10', 'y(0)=0', 'y(1)=1')     % we give a points to git the contstant c1 and c2.     
+---------------------------------------------------------------------------------------------------------------
+block diagram series reduction :-   "two series transfer functions"
+
+   n_g1 = [ 3 6 ];                                    % num of first transfer func g1
+   d_g1 = [ 1 7 0 ];                                  % den of first transfer func g1 
+   n_g2 = [ 5 ];                                      % num of second transfer func g2 
+   d_g2 = [ 1 2 10 ];                                 % den of second transfer func g2
+   
+   [ n_gt , d_gt ] = series( n_g1 , d_g1 , n_g2 , d_g2);
+   printsys(n_gt , d_gt)
+-----------------------------------------------------------------------------------------------------
+block diagram parallel reduction :-    "two parallel transfer functions"
+
+   n_g1 = [ 3 6 ];                                    % num of first transfer func g1
+   d_g1 = [ 1 7 0 ];                                  % den of first transfer func g1 
+   n_g2 = [ 5 ];                                      % num of second transfer func g2 
+   d_g2 = [ 1 2 10 ];                                 % den of second transfer func g2
+   
+   [ n_gt , d_gt ] = parallel( n_g1 , d_g1 , n_g2 , d_g2);
+   printsys(n_gt , d_gt)
+------------------------------------------------------------------------------------------------------
+block diagram feedback reduction :-
+
+   n_g = [ 3 6 ];                                     % num of first transfer func g
+   d_g = [ 1 7 0 ];                                   % den of first transfer func g 
+   n_h = [ 1 2 ];                                     % num of second transfer func h 
+   d_h = [ 1 10 ];                                    % den of second transfer func h
+   
+   [ n_f, d_f ] = feedback(n_g, d_g, n_h, d_h, -1);
+   printsys(n_f , d_f)
+------------------------------------------------------------------------------------------------------
+symbols :-
+  
+   syms "your symbols"                             to define your symbols.
+   
+    syms s 
+    f = s^3 + 5*s^2 + 6*s + 3  ; 
+    g = s^2 + 6*s +9 ;  
+    m = f*g
+    m =
+       (s^2 + 6*s + 9)*(s^3 + 5*s^2 + 6*s + 3)
+    d = expand(m)                                     
+    d =
+       s^5 + 11*s^4 + 45*s^3 + 84*s^2 + 72*s + 27
+    u = factor(d)                                  % to git the factors of an equation.     
+    u =
+       [s^3 + 5*s^2 + 6*s + 3, s + 3, s + 3]
+         --------------------------------------------------------
+
+solve                                           Equations and systems solver.
+
+   syms x    
+   solve ( x^3-1 ==0 )
+              --------------------------
+
+   syms x1 x2 
+   [ x1 x2 ] = solve ( x1-x2-6, x1+x2+2 )       % solve 2 equations (x1-x2=6, x1+x2=-2)
+   x1 = 2  ;;   x2 = -4 
+       -------------------------------------------------------------
+  
+   syms x y 
+   a = (x-y)*(x-y)^2 ;
+   a =
+      (x - y)^3
+   u = expand(a)                                   % Expanding
+   u =
+      x^3 - 3*x^2*y + 3*x*y^2 - y^3
+   u / (x-y)
+   ans =
+        (x^3 - 3*x^2*y + 3*x*y^2 - y^3)/(x - y)
+   m = simplify(u/(x-y))                           % Simplifying
+   m =
+      (x - y)^2
+       ----------------------------------------------------------
+
+git a value of an equation :-
+
+   syms x y
+   n = x^2 - 2*x*y + y^2 ;                     %         n         x           0                     n         x   y        1    2
+   r = subs(n , x , 0)                         % subs(equation, variable, value you want) or subs( equation, {var, var} , {num, num} ) 
+   r =                                         % her we put x = 0 , so we get the value of y. 
+       y^2 
+-------------------------------------------------------------------------------------------------
+Differentiation, Integration and limits :-
+   
+ diff(functoin, variable i want to diff it, num of diffs )
+ int (functoin, variable i want to int it , num of ints or "start num , final num" )
+ int (int (functoin, varible ) , variable )        % double int " int( int(f,x), y ) "
+
+   syms x y
+   f = x^2 + y^2 
+   answer = int( int(f,x,0,2) , y,0,2 )            % (int of "f" to "x" from 0 to 2) then int of that to "y" from 0 to 2.
+   ans = 
+        32/3  
+   -------------------------------------------
+
+   syms a b c x y z
+   f = a*x^2 + b*y^2 + c*y;
+   answer = diff( f, y)
+      answer =
+           c + 2*b*y
+   subs(answer , { b, c, y }, { 1, 2, 3 })         % when you put a value to the variables. "التعويض"
+      ans =
+           8
+   ------------------------------------------------------
+
+   syms x
+   f = x^3 + 6*x^2 - 10*x + 6 ;
+   y = diff(f)                                 % differentiotion 
+   y =
+      3*x^2 + 12*x - 10
+   y = int(f)                                  % integration
+   y = 
+       (1/4)*x^4 + 2*x^3 - 5*x^2 + 6*x
+   y = diff (f, 2)                             % diff 2 times. (equation, num of times you want to diff)       
+   y =
+       6*x + 12
+        -------------------------------------------------------------------
+
+   syms x y
+   f = y*x^2 + 2*y^3 +5*x*y ;
+   diff(f, y)                                  % diff equation"f" to the var"y".
+   int(f, y)                                   % int equation"f" to the var"y".
+        ------------------------------------------------------------------
+limits :-
+   
+   syms x
+   f = (x^3 + 6*x^2 - 10*x)/(x) ;
+   limit(f,x,0)                                % limit(equation, variable, num)
+   ans =
+         -10
+-------------------------------------------------------------------------------
+laplace transform and inverse :-
+
+   f = sym('6')
+   F = laplace(f)
+   f = sym('t')
+   F = laplace(f)                              % laplace transform
+   F = ilaplace(f)                             % inverse laplace
+---------------------------------------------------------------------------------------
+Transfer function to State space :-
+  
+   num = [ 1 0 ];
+   den = [  1 14 56 160 ];
+   [ a b c d ] = tf2ss(num , den)
+-------------------------------------------------------------------------------
+State space to Transfer function :-
+
+   a = [ 0 1 ; -3 -4 ];
+   b = [ ;1 ];
+   c = [ 1 0 ];
+   d = 0 ;
+   [ n , d ] = ss2tf(a, b, c, d)
+   printsys(n, d)
+----------------------------------------------------------------------------
+zpk to transfer function :-
+
+   k = 10;
+   z= [-1; -2 ];
+   p = [ 0; -3; -4; 4];
+   [n,d ] = zp2tf(z, p, k)
+   printsys(n,d)
+-----------------------------------------------------------------------
+Transfer function to zpk :-
+
+   n = [ 5 6 ];
+   d = [ 1 6 11 6 ];
+   [ z, p, k ] = tf2zp(n,d)
+   printsys(z,p,k) 
+-------------------------------------------------------------------
+zpk to state space :-
+
+   k = 10;
+   z = [-1; -2];
+   p = [ 0; -3; -4; 4];
+   [a, b, c, d] = zp2ss(z, p, k)
+---------------------------------------------------------------
+Write a file :-
+
+   i == linspace(0, 2*pi, 10);
+   Data = [ i ; sin(i) ];
+   filew = fopen( 'Myfile.txt' , 'w')
+   fprintf(filew,'%f %f' , Data)
+   fclose(filew)
+---------------------------------------------------------------
+Read a file :- 
+
+   fileR = fopen( 'Myfile.txt' , 'r' );
+   v = fscanf(fileR , '%f' , [2 Inf])
+   fclose(fileR);
+--------------------------------------------------------------
+append a file :-      'write in an exist file without overwritting'
+
+  n = linspace(0, 2*pi, 10);
+  DataN = [ n; n.^2; sind(n) ];
+  fileA = fopen('Myfile.txt', 'a');
+  fprintf(fileA, '\n\n Here is my new data\n');
+  fprintf(fileA, '%f %f %f', DataN);
+  fclose(fileA);  
+---------------------------------------------------------------------
+Simulink :-
+ type simulink, blank model then liberary browser.                                    
+--------------------------------------------------------------------------------------------------------                                                                            
+crtl N                                             for new script.
+   crtl S                                             to save it.
+   int8(variable)                                     for integer and 8 bytes.
+   int16(variable)                                    for integer and 16 bytes.                                                              
+   int ()                                             for signed integer.
+   uint ()                                            for unsigned integer.
+   single ()                                          for 
+   double ()                                          for
+   char ()                                            for 
+--------------------------------------------------------------------------------------------------------
+clc                                                to clear window and let variables.
+--------------------------------------------------------------------------------------------------------
+clear variable's name another name                 to remove certain variables. 
+--------------------------------------------------------------------------------------------------------
+clear all                                          to clear all variables.
+--------------------------------------------------------------------------------------------------------
+help command's name                                to show help for this command.
+--------------------------------------------------------------------------------------------------------
+look for command's name                            to show help and topics related.
+--------------------------------------------------------------------------------------------------------
+doc command's name                                 to show help in a documentation way.
+--------------------------------------------------------------------------------------------------------
+                                
+                                  Good Luck (:                                                
