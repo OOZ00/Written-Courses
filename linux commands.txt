@@ -1,0 +1,317 @@
+         let's get lit :)
+		
+               ss64.com  we can learn more :
+  Hey! Remember to use --help when you get confused.
+--------------------------------------------------------------------------------------------------------
+slmgr /dli                                 show your win liscence.
+--------------------------------------------------------------------------------------------------------
+wmic memorychip get devicelocator, manufacturer      show the manufacturer of ram.
+--------------------------------------------------------------------------------------------------------
+wmic memorychip get devicelocator, capacity          show the capacity of ram.    "you can write the 3 commands"
+--------------------------------------------------------------------------------------------------------
+wmic memorychip get devicelocator, speed             show the speed of ram.
+--------------------------------------------------------------------------------------------------------
+ctrl + d                                   end task.
+--------------------------------------------------------------------------------------------------------
+command --help                             show help of that command. "win"
+--------------------------------------------------------------------------------------------------------
+man command                                show help ot that command. "linux"
+--------------------------------------------------------------------------------------------------------
+clear or cls                               clear screen.
+--------------------------------------------------------------------------------------------------------
+ 
+
+pwd	               		           show where are you.
+--------------------------------------------------------------------------------------------------------
+ls             		                   show all files
+   ls +name of file                           show indide it. 
+   ls /                                       show root dirs.
+   ls \                                       show first directory files. 'Home'
+   ls ..                                      back a step.
+   ls ..\..\		                   back 2 sreps.
+   ls -l                                      show in long format.
+                drwxr mean directory read write excute write.
+                d for dir, first for user, second for group, third for others.
+   ls -a                                      show hidden files.
+   ls -la                                     combiend command.
+   ls -lS                                     show sorted from big to small size.
+   ls *.'sort of file'                        show files with the demand extention.
+        	ls *.html  mean to show html files.
+   ls  *.*                		           show all extentions and all names.
+   ls "-lS" > file.sort                       save formations in a file from the command result.
+   ls -d *\                	           show all directories.
+   ls -R                                      show all dirs with thier way and files.
+--------------------------------------------------------------------------------------------------------
+cd             			      	   change directory. "home folder"
+   cd \           		              back to first directory. 'home''root directory'
+   cd-				       	      back to home directory.
+   cd .. 				      back one folder.
+   cd first name\second name      	      when you have a folder have a space in it is name.
+           or you can put in "here"               
+           or you can put in 'here'              
+            like My Books    =     cd My\ Books
+                                   cd "My Books"
+                                   cd 'My Books'
+--------------------------------------------------------------------------------------------------------
+cat file name then enter                   type what you want then crtl d to exit and your type is in the file.     		      	          
+   cat name of txet file   	              show the content of it.
+   cat name1 name2                            show 2 files content.
+                cat test.txt test2.txt
+   cat -b                                     desplay num to each line except the empty one to sort them.
+   cat -m                                     desplay num to all lines.
+   cat -s                                     desplay and remove all empty lines but keep one. 
+   cat -E                                     desplay ass $ to each end of line.
+   cat > file                                 redirect information to a file.
+   cat >> file                                do not overwrite the old information. 'type after it'
+   cat name of files with space > new file    redirect all files to a new one.
+--------------------------------------------------------------------------------------------------------
+md or mkdir                                make a directory. 'folder'
+   md file's name                             make file with name.
+   mkdir name1\name2                          make folder2 inside folder1.
+--------------------------------------------------------------------------------------------------------
+rm -d                                      remove empty dir.
+   rm -r                                      remove dir and it's content.
+   rm                                      
+   rm -dv or -rv way of the folder            remove last dir in the way.
+--------------------------------------------------------------------------------------------------------
+cp option 1 or more source destenation     copy files.
+   cp -i                                      ask before overwriting.
+   cp -R                                      copy all content.
+--------------------------------------------------------------------------------------------------------
+mv option 1 or more source destenation     move dirs.
+   mv file name's new name                    change name, move and oveer write if it's exist. if not exist make new one.
+   mv -i                                      ask before you overwrite.
+--------------------------------------------------------------------------------------------------------
+less file name                             show content of a file from it's begining.
+           enter mean read one line, space mean next page.
+           press "q" to quit.                  
+           press "B" to forward one page.       
+           press "G" to get end.               
+           press "1G or g" to get the begening.
+           press "/ name" to search inside a file from up to down and press "n" to show the searched name.
+           press "? name" to search inside a file from down to up and press "n" to show the searched name.
+--------------------------------------------------------------------------------------------------------
+touch file's name                          creat empty file.
+   touch file.text or something else          creat the file.
+   touch file's name                          change time stamp of the file.
+--------------------------------------------------------------------------------------------------------
+nano files's name                          creat a file.
+           "ctrl o" to save the file.                            
+           and there are the inf you need to work.
+--------------------------------------------------------------------------------------------------------
+sudo                                       super user do. 'give you permetions' "linux"
+   sudo md file                               give you permetion to creat a file. "linux"
+   sudo -s                                    super user.
+--------------------------------------------------------------------------------------------------------
+top                                        like task manager."linux"
+           "s" to change time of refresh.   
+           "i" to filter.                     
+           "k" to kill a prosses.              
+--------------------------------------------------------------------------------------------------------
+kill -flags id                             to kill a program.  
+--------------------------------------------------------------------------------------------------------
+pid program name                           to have the id of a program.
+           "-KILL"      powerfull kill.    
+           "-9"         powerfull kill.    
+--------------------------------------------------------------------------------------------------------
+tasklist                                   like a task manager.
+   TASKLIST /?                                for help.
+--------------------------------------------------------------------------------------------------------
+ps                                         show what is running.
+   ps --help                                  see other flags.
+--------------------------------------------------------------------------------------------------------
+echo text, you can use ""                  display text.
+--------------------------------------------------------------------------------------------------------
+chmod "o+option" file's name               change status of files.
+           "r" for reading.                    
+           "w" for writing.                    
+           "x" for excuting.                    
+           "o" for other.                         
+           "g" for group.                         
+           "u" for user.                         
+           "a" for all users.                 
+           "+ or =" for adding, "-" for substracting.
+           like chmod u=wr,g=rw,o=wr  file's name.
+   chmod "1:7""1:7""1:7" file's name       users,group,other.
+           a way to change permetions of a file. 
+           000 for no permetion '0', 001 for x '1'
+           010 for w '2' , 011 for wx '3'     
+           100 for r '4' , 101 for rx '5'      
+           110 for rw '6' , 111 for rwx '7'     
+--------------------------------------------------------------------------------------------------------
+which command or any prog                  know where it from."location"
+--------------------------------------------------------------------------------------------------------
+whatis command or any prog                 give you a discrebtion of it.
+--------------------------------------------------------------------------------------------------------
+useradd name                               make a user.   "linux" "remmember sudo"      
+           -m mean defult home dir.                   
+           -s mean defulr shell.                       
+           -g users                                  
+           -c for comments.                                      
+   passwd user's name                         to give it a pass.
+   userdel option user's name                 to delete a user.'not a home dir'
+           -r remove user and home dir.        
+--------------------------------------------------------------------------------------------------------
+groups                                     which groups did user conect.
+   groupadd name                              to add a group.                       
+   groupdel name                              to delete a group.
+   gpasswd -a user's name group's name        to assign'add' a user to a certain group.       
+           -d user's name group's name        to remove from a group.          
+--------------------------------------------------------------------------------------------------------
+gedit                                      it's a editor. "linux"
+--------------------------------------------------------------------------------------------------------
+df                                         available disk space.
+   -h                                         sizes in Gegabyte.
+--------------------------------------------------------------------------------------------------------
+du option folder's name                    Summarize disk usage of the set of FILEs, recursively for directories.      
+   -h                                         sizes in Gegabyte.
+   -sh                                        disk used in summary.
+--------------------------------------------------------------------------------------------------------
+free                                       show you ram usage.  "linux"
+   -m                                         for megabyte data.
+   -g                                         used ports.
+--------------------------------------------------------------------------------------------------------
+systeminfo|find "Available Physical Memory"    for win to show free ram.
+--------------------------------------------------------------------------------------------------------
+watch argument option                      excuted repeatedly. "linux"
+   -n num                                      increase refreshing time.
+--------------------------------------------------------------------------------------------------------
+head file's name                           to show first 10 lines, you can use maltiple files.
+--------------------------------------------------------------------------------------------------------
+tail file's name                           to show last 10 lines, you can use maltiple files.
+   -n num's of lines file's name               to show num's of lines you want.
+   or just -num's of lines file's name            
+   -f file's name                              show last 10 lines and refresh if the file changes.
+--------------------------------------------------------------------------------------------------------
+find dir location -name file's name*       to search for something.
+   find location -mtime -num                   show you files have been created last num you types of days.    
+--------------------------------------------------------------------------------------------------------
+wc file's name                             show you nums of file's lines, words, carachters.
+   -c                                          just num of carachters.
+   -l                                          just num of lines.
+   -w                                          just num of words.
+   -L                                          num of carachters of the longest line.
+--------------------------------------------------------------------------------------------------------
+cal                                        calender. "linux"
+   num of year                                 all months calender.
+   num of month num of year                    show that month.
+   -3                                          show you last and now and next month.
+--------------------------------------------------------------------------------------------------------
+date                                       to show date.
+   -s                                          set the date.
+   date "+%d-%h-%y"                            show date in format of mm-dd-yy.
+--------------------------------------------------------------------------------------------------------
+command ; another command                  run to commands in one time. "linux"
+   you can type more than two just type ; between them.
+--------------------------------------------------------------------------------------------------------
+&&                                         AND symbole like ; in linux.
+   you can type more than two just type && between them.
+   if first command fail it will not excute the rest.
+--------------------------------------------------------------------------------------------------------
+||                                         OR command if first command is excuted the other will not.
+--------------------------------------------------------------------------------------------------------
+apt-get update                             install software. "linux"                                   
+--------------------------------------------------------------------------------------------------------
+apt-get install                            install software. "linux"
+--------------------------------------------------------------------------------------------------------
+aapt-get remaove software's name           remove sofrware. "linux"
+   remove --purge software's name              remove it and it's configrations.  
+--------------------------------------------------------------------------------------------------------
+apt-get autoremove                         packegs and liberaries no longer needed.   
+--------------------------------------------------------------------------------------------------------
+java -version                              show java version. "linux"
+--------------------------------------------------------------------------------------------------------
+php5 -v                                    show php version. "linux"
+--------------------------------------------------------------------------------------------------------
+ifconfig                                   to cahnge configs. "linux"
+   eth0 or 1 or 2 down                         turn off the internet.
+   eth0 or 1 or 2 up                           turn on the internet.
+--------------------------------------------------------------------------------------------------------
+tar                                        create, meantain, compress and extract . 
+   --help                                      to know. 
+   -cvf file.tar file's name                   compress file with the name you want.
+   -czvf file.tar.gz file's name               compress file with the name you want but gzip file.
+   -xvf file.tar                               extract files.
+   -c                                          to compress or create.
+   -r                                          to add or replace file.
+   -t                                          to list files.
+   -u                                          to update file.
+   -x                                          to extract files.
+   -v                                          show the progress.
+   -f                                          specify the file name.
+--------------------------------------------------------------------------------------------------------
+grep word you need file's name             search patterns or words on a file or group of files.
+   -i                                          search all cases.
+   -n                                          to write line num.                                           
+   put sentens you need in "" to search it     search 2 word or more.
+   you can type * instead of file's name       search all files in the folder.
+   -v                                          search non matching words. "doesn't contain"
+   remember --help                             
+--------------------------------------------------------------------------------------------------------
+netstat                                    to show net conections routing cables and statistics.
+   -a                                          show all conections and status.
+   -s | less                                   show statistics.
+   -st for tcp, -su for udp.               
+   -a | less                                   show all. and q to quit.
+   -at | less                                  show tcp conections.
+   -au | less                                  show udp conections.
+   -l | less                                   show lestening conections.
+   -e                                          show ethernet.
+   -n                                          show numarical form.
+   -q                                          show all conections.
+--------------------------------------------------------------------------------------------------------
+netstat -an | grep '  '                    shearch the output.                                                                                                                                                                          
+--------------------------------------------------------------------------------------------------------
+ipconfig /all                              to show all iformation about your internet.
+   Physical Address is your mac address.
+--------------------------------------------------------------------------------------------------------
+ping --help                                know all about ping.
+   ping page's url                            show the ping.
+--------------------------------------------------------------------------------------------------------
+netstat                                    network connectiond.
+--------------------------------------------------------------------------------------------------------                                            
+shutsown --help                            it's great.                                                
+   shutdown /a                                to aabort shutsown.
+   shutdown /r                                to restart. 
+   shutdown /s                                to shutdown.
+   shutdown /ro                               restart and open boot options.
+   shutdown /t xxx                            tibe a time in xxx and it will shutdown after it.
+   shutdown /c or /d                          to give a comment, reason for restart.
+   shutdown /f                                force to close.
+   shutdown /i                                gui.
+--------------------------------------------------------------------------------------------------------
+~ Link : https://www.youtube.com/watch?v=GFGImSdJNWk&list=PLS1QulWo1RIb9WVQGJ_vh-RQusbZgO_As&index=45 
+-------------------------------------------------------------------------------------------------
+                       - Git & GitHub course cmder code (:
+
+
+git clone "url"                            to clone a github repo.
+--------------------------------------------------------------------------------------------------------
+git status                                 show you what is done in working dirictory.
+--------------------------------------------------------------------------------------------------------
+git add file's name or "* to add all"      to add a file from working area to staging area.
+--------------------------------------------------------------------------------------------------------
+git restore --staged "file's name
+git reset head "file's name" or "*"                         to unstage it. "back it to working dir" "* for all files"
+--------------------------------------------------------------------------------------------------------
+git commit -m "your massage"                                to put them in local Repo and tell a massege. 
+   if asked for git config write these two lines :          "and it will work"
+      git config --global user.name "abc                
+      git config --global user.email "abc@example.com   
+-----------------------------------------------------------------------------------------------
+git branch                                                  to show you your branch on your local repo. 
+------------------------------------------------------------------------------------------------------
+git remote -v                                               to show you your remote name.
+------------------------------------------------------------------------------------------------------------
+git push RemoteRepoName BranchName                          ( remore > origin, branch > master).      
+-----------------------------------------------------------------------------------------------------------------------------------------
+you can add more than one commit with the last commands ["just git add it" then "git commit -m "massage"" then "git push origin master" it]  
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+           			
+                                    Good Bye.

@@ -1,0 +1,329 @@
+           Some words you should learn :
+
+- Repository "Repo"                                 the big hall that contain the code. "it has an admin"
+--------------------------------------------------------------------------------------------------------
+- branch                                            piece of the Rebo.
+--------------------------------------------------------------------------------------------------------
+- local Repo                                        your local one. "your PC"
+--------------------------------------------------------------------------------------------------------
+- remote Repo                                       any page on the internet. "GitHub"
+--------------------------------------------------------------------------------------------------------
+- commit                                            snapshot or checkpoint in your local Repo.
+--------------------------------------------------------------------------------------------------------
+- clone                                             copy of local or remote Repo.
+--------------------------------------------------------------------------------------------------------
+- push                                              uploud local changes to remote Repo.
+--------------------------------------------------------------------------------------------------------
+- pull                                              pull changes from remote Repo to local.
+--------------------------------------------------------------------------------------------------------
+- pull request                                      tell other about your changes to pull it from local to remote.
+--------------------------------------------------------------------------------------------------------
+- backticks                                         name of this ` .
+--------------------------------------------------------------------------------------------------------
+- hyphen                                            name of this - .
+--------------------------------------------------------------------------------------------------------
+- Git                                               is a tool that tracks the changes in your code.
+- GitHub                                            is a website to host your Git repos.
+
+
+             
+                    Now we need to learn "Markdown" language (:
+
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#quoting-code
+--------------------------------------------------------------------------------------------------------
+It's used for Readme.md Files(GitHub, etc).
+            ---------------------------------------------------
+  -to create a heading, add one to six # symboles before heading text,
+     #                                                   for the largest heading.
+     ##                                                  for the second heading.
+     ######                                              for the smallest heagding.
+     you can navigate these headings by glicking the symbole side the readme.md.
+            ----------------------------------------------------
+  -to style a text,                                      
+     Bold                                                   use **text** or __text__ , or crtl + b.
+     Italic "bending text"                                  use *text*   or _text_ , or crtl + i. 
+     strikethough "crossed out"                             use ~~text~~ .
+     all Bold and Italic                                    use ***text*** .
+     Horizontal Rule                                        use --- or ____
+     show *text*                                            use \*text\* .
+            ----------------------------------------------------  
+-to Block Quote text                                   use > text .
+  -to Quote code                                         use ``` code ``` .
+  -to create a link                                      use [text shown](url"text") , or crtl + k . "text" to show text instead url. 
+  -to make a point beside an Item                        use * or - Item's name , and press tap then * or - to type an Item bottom as list 'nested item'.
+  -to number Items                                       use 1. to add nums.
+  -to Inline code                                        use `code`
+  -to add Image                                          use ![text](url then #gh-dark or light-mode-only) . for dark or light
+  -to make Task list                                     use - [] text , use - [x] to mark it complete. if it began with () we put \ .
+  -to Mentioning people and teams                        use @ .
+  -to Referencing issues and pull requests               use # .
+  -to use Emojies                                        use :EMOJICODE: . https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
+  -to use table                                          use | as a space and ---- as a line seperate the rows.
+     like:
+          | Name    |   Email |
+          |---------|---------|
+          | do      | dsp@game| 
+  -to use footnotes                                      use [^num] then in the wanted place put it again. 
+     like:    
+          A footnote can also have multiple lines[^2].  
+          You can also use words, to fit your writing style more closely[^note].
+           [^1]: My reference.
+           [^2]: Every new line should be prefixed with 2 spaces.  
+                This allows you to have a footnote with multiple lines.
+           [^note]:
+                   Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
+                   This footnote also has been made with a different syntax using 4 spaces for new lines.
+-------------------------------------------------------------------------------------------------------------------  
+    
+                         
+
+.md "Markdown"                                              write text were syntaxed like you see in GitHub.
+--------------------------------------------------------------------------------------------------------
+sittings> branches> switch> master> update                  to make it (master -> origin)
+--------------------------------------------------------------------------------------------------------
+your profile> Repo> add new> check for read me              how to make a new Repo.                            
+                        
+                           - From here we use cmder
+--------------------------------------------------------------------------------------------------------
+git clone "Repo's url"                                      type it in the cmdr to clone a repo.
+--------------------------------------------------------------------------------------------------------
+git status                                                  show you the status what is exist or lost from your dir and what's happen.
+--------------------------------------------------------------------------------------------------------
+working dir> staging area> local Repo> remote Repo          this is the way to commit your Repo to git servers.
+ git add      git commet    git push                        command to do the last line.
+-------------------------------------------------------------------------------------------------------------------------------
+git add "file's name" or "file's name/other" one or "*"     to add your files into staging area. "* for all files"
+git add -p file's name                                      to show the difference and make you choice to accept edits or not.
+------------------------------------------------------------------------------------------------------------------------------
+git restore --staged "file's name" or "*"
+git reset head "file's name" or "*"                         to unstage it. "back it to working dir" "* for all files"
+------------------------------------------------------------------------------------------------------------------------
+git clean -n                                                show you files would be cleaned.
+git clean -f                                                to remove these files. 
+  to save your work before cleaning unwanted files just git add them.
+--------------------------------------------------------------------------------------------------------------------
+git commit -m "your massage"                                to put them in local Repo. 
+   if asked for git config write these two lines :          "and it will work"
+      git config --global user.name "abc                
+      git config --global user.email "abc@example.com   
+------------------------------------------------------------------------------------------------------------------
+git commit -am "your massage"                               to commit and add at the same time.
+git commit                                                  open a terminal to type your massage.
+   this massage first line is the subject"summary of that change" and the third for the body"more explanation".
+   to save and quit the terminal type : to go to command window then ':x' or ':wq' to save & quit, or ':q!' to quit only. 
+--------------------------------------------------------------------------------------------------------------------------
+git branch                                                  to show you your branch on your local repo. 
+------------------------------------------------------------------------------------------------------
+git remote -v                                               to show you your remote name.
+------------------------------------------------------------------------------------------------------------
+git push RemoteRepoName BranchName                          ( remote > origin, branch > master).      
+-------------------------------------------------------------------------------------------------------------
+you can add more than one commit with the last commands ["just git add it" then "git commit -m "massage"" it]  
+-------------------------------------------------------------------------------------------------------------
+git pull "remote repo"                                      clone the changes from remote repo to your local repo.
+---------------------------------------------------------------------------------------------------------------------
+git diff file's name                                        to show the difference in that file after the changes.
+--------------------------------------------------------------------------------------------------------------------
+git config -l                                               to git configrations. 
+   
+   git config --global --edit                                  open your editor to change evety thing.                                                          
+   git config --global user.email "your mail"                  to edit your email.
+   git config --global user.name "your name"                   to edit your name.                             
+   git config --global --unset user.name                       to unset the user name. "make it empty"
+-----------------------------------------------------------------------------------------------------------------        
+ssh-keygen -t rsa -b 4096 -c "your email"                   to make a GitHub public key.
+OR> ssh-keygen -t ed25519 -C "your email"                   to make a GitHub public key. 
+   
+   ssh-keygen -t rsa -b 4096                                   then add a pass to the file which carry the key.
+   cat "the file or go to it's position and copy the 'key' then go to 'your account' in GitHub then 'sittings'
+   then 'SSH and GPG keys' then add the key to 'SSH Keys' .
+   ssh -t git@github.com                                       to check the key.     
+--------------------------------------------------------------------------------------------------------------
+git initialize a Repo :-
+
+   first ' git init ', then you go to your github and 
+   'add a new repo',a quick setup massage will appear,
+   choose 'ssh'then copy 'git remote add origin git@github.com.....'
+   then type in cmdr 'git push -u origin master'              "-u for pull new changes first then push yours"
+   then type the 'pass of ssh'.
+
+git init                                                    to initialize a repo at your local disk.
+git remote add origin 'ssh url'                             to make it a remote repo.
+git push -u origin master                                   push your files to remote repo.
+------------------------------------------------------------------------------------------------------------------------
+forking a Repo from anyone 
+ > A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+ 
+   go to any Repo then 'push on fork' then 'create fork',
+   then the Repo will be shown in your Repos.
+  -> after you edit what you want and commit it in 'master branch'     "here you commit to master branch"
+  | got to 'pull request' then 'new pull request'  
+  |  
+  -> or after editting and commit it to 'new branch'           "here you make a new branch then commit it to it not to the master branch"
+    then pull request.                                         "here you your pull request to your master or shared Repo"
+    then 'pull request' to the remote Repo.                    "here you pull to the remote Repo"
+    remember to check 'allow edits'
+-------------------------------------------------------------------------------------------------------------------------------------   
+Alias                                                       
+
+   git config --global alias."two char for wanted alias" "the word"
+   like :-
+         git config --global alias.st status                          "making alias for status"
+         git config --global alias.cm "commit -m"                     "making alias for commit -m"
+ 
+   "git alias list" in Google for helping you to ease your use.
+-----------------------------------------------------------------------------------------------------------------------
+Branches :-
+
+git branch name                                             to create a branch.
+           -m name                                          to rename a branch.
+           -d name                                          to save delete a branch.
+           -D name                                          to force delete locally.
+           -av                                              to show all branches.
+git checkout name                                           to switch to the wanted branch. 
+             -b name                                        to create a branch and go to it.
+git push origin -delete 'name'                              to delete branch remotly.
+
+Merging :-
+
+ first you can merge working branch with a master one :- 
+  just go to the branch you want to merge with it and type
+   
+    git merge name                                              "name of branch you want to merge"
+    then git push origin master                                 to send it to the origin.
+
+ OR you can push your branch to the origin directly by :-
+    git push -u origin "branch's name"                       "now it's making a pull request" 
+----------------------------------------------------------------------------------------------------
+if you have a files and you added them then you did not want to commit them you can save them by :-
+
+   git stash                                                this meaning saving working directory.
+   git stash save "name"                                    to stashing it with name.    
+   git stash list                                           show any stashed working.
+   git stash pop                                            git your saved working from stash and remove it from the list. 
+   git stash apply                                          show you saved working from stash and didn't remove it.
+   git stash drop                                           to remove a stash.  
+   git stash apply or pop or drop stash@{num}               to show certain stash from it's id."other this code, it shows last one.
+   git stash show                                           to show you the contents.
+   git stash clear                                          to remove all stashs wuth it's contents. 
+-------------------------------------------------------------------------------------------------------------------------- 
+HEAD in GitHub :- 
+   is the pointer that point to the last commit.
+
+Removing commits :-
+
+ to remove a commit you should not make the HEAD point to the commit you want to delete,
+ first use "git log" > it shows you your commits; and each commit has a hash next to it,
+ then use " git reset --hard 'hash' " || " 'hash' > of the last commit you want to keep it
+ and each commit happened after it will be removed " . now you should update your remote
+ repo by using " git push origin master --force " to force update.
+
+git log                                                     show you logs or commits.
+      q                                                         to quit git log. 
+git reset --hard 'hash of last wanted commit'               delete all changes after that commit.
+git push origin master --force                              force update the remote repo.
+
+git reset HEAD~num                                          to remove a commit.
+git reset --soft 'hash of last wanted commit'               does not touch working tree and leaves all changed files. 
+--------------------------------------------------------------------------------------------------------------------
+Rebase :-   
+
+to change commit's massage."play with commit and HEAD" :-
+ 
+   git log --oneline                                           show log in one line.
+   git rebase -i HEAD~'nume of required commit'                open editor for these required commits.
+   'alt+a' then change 'pick' to 'reword' 'alt+;' then ':x'    to keep the commit and edit the massage. "don't change the  massage from here.
+   then the editor shows a massage type 'e'                    to edit the file.
+   now change your massage 
+   'alt+;' then ':x'                                           now your massage was changed.
+            ----------------------------------------------------------
+To combine to commits or more :-
+
+   git log --oneline
+   git rebase -i HEAD~'num you want'
+   'alt+a' then change 'pick' to 'squash' 'alt+;' then ':x'    type it to line 2 and it will combine with line 1.
+   then the editor shows a massage type 'e'                    
+   now you can type a massage to the combined commits
+   'alt+;' then ':x'                                           now you combined the commits.                                     
+---------------------------------------------------------------------------------------------------------
+cherry pick :-                                                 move a commit from branch to another one.
+ 
+   go to the branch you want to move a commit from it and copy it's hash  
+   then go to your terminal and swich to the branch you want to move to it
+   "git cherry pick 'commit's hash'"                              now it's moved.
+ OPtional:-
+   you can remove that commit if it's not important.              
+------------------------------------------------------------------------------------------------
+Reflog :-                                                      restoring branching or commits.
+ 
+ if you delete a commit by accident you can restor it by
+   
+   'git reflog' then copy the hash of prevous commit or an event fo wanted files 
+   'git branch name hash'                                         now you restored it.   
+----------------------------------------------------------------------------------------------
+submodules:-                                                   merging a third-party code.
+ 
+   
+---------------------------------------------------------------------------------------------
+To ignore some files or folders:-
+
+   we make a file called " .gitignore " , this file did not appear bot when you type git status 
+   it will appear. then we type code .gitignore to ignore some files, just type the extention 
+   extention of the files you did not want to include, when you type git status it will not appear.
+ 
+touch .gitignore                                            make file called .gitignore.
+code .gitignore                                             type files you didn't want.
+ *.extention                                                to ignore all files that end with that extention.
+ file name with extention                                   to ignore specific file.
+     and !"file name"                                       to except that file from ignoring.
+type folder name/                                           to ignore that folder with it's content.
+
+git add -f file name                                        force adding files if it's ignored or not.
+----------------------------------------------------------------------------------------------------------
+Making Tags :-
+  
+after making your project and adding it, then commit it with a massage, and push it.
+first type git tag, then "git tag tag's name". now push it " git push origin tag's name ".
+               
+    lightweight tag :-
+git tag tag's name.                                         rename the tag. "massage from the first commit"
+git push origin tag's name                                  push it to remote.
+ 
+    annotated tag :-
+git tag -a tag's name -m "tag's massage"                    rename the tag and give a massage.
+git push origin tag's name                                  push to remote.
+
+git tag -l                                                  show tags list.
+  or       "v1.*"                                           show all version 1.
+                  --------------------------------------
+Making an update to your tag :-
+ 
+after making your tag, go to 'GitHub' > 'tags' > '...' then 'new release'
+                  ---------------------------------------- 
+Deleting tag :-
+
+git tag -d tag's name                                       to delete it localy.
+git tag --delete tag's name                                 to delete it remotly.
+---------------------------------------------------------------------------------------------------------
+Hint for a perfect commit :-
+ 
+   you should commit the files that have the same topic to make a good explaining massage.
+------------------------------------------------------------------------------------------------
+Find and Research :-
+
+git log 
+        --befor="date" / --after="date"
+        --grep="txt"
+        --author="author name"
+        --filename
+        --branch-A                                             
+        --branch..branch                                       show commits in the second and not in the first.   
+
+
+
+
+
+
+
+
+ 
